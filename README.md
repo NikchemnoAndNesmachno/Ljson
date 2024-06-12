@@ -1,4 +1,4 @@
-# A simple library for encoding objects into an <b>ljson</b> string.
+# A simple library for encoding objects into an ***LJSON*** string.
 
 It is like json, but L (!) json. Try it.
 
