@@ -10,7 +10,7 @@ These characters are rare for human writing.
 
 Let us have this class: 
 
-```
+```c#
 internal class TestObject
 {
     public string StrProp { get; set; } = "String Value";
@@ -26,7 +26,7 @@ internal class TestObject
 
 So we must have a corresponding converter. For example:
 
-```
+```c#
 internal class TestObjectConverter : LjsonConvert<TestObject>
 {
     public override string[] GetValues(TestObject obj)
@@ -51,7 +51,7 @@ We must define the SetValues method to set our properties from string array got 
 
 To launch it:
 
-```
+```c#
 internal class Program
 {
 
@@ -77,7 +77,7 @@ internal class Program
 
 If you have the class with private fields that must be included in ljson, you can use the Iljsonable interface. <br>
 
-```
+```c#
 internal class PrivateTestObject : ILjsonable
 {
     private int IntField = 100;
@@ -111,7 +111,7 @@ internal class PrivateTestObject : ILjsonable
 ```
 And your converter can use its methods (in future versions its behaviour will be added to the package):
 
-```
+```c#
 internal class PrivateTestObjectConverter : LjsonConvert<PrivateTestObject>
 {
     public override string[] GetValues(PrivateTestObject obj)
@@ -128,7 +128,7 @@ internal class PrivateTestObjectConverter : LjsonConvert<PrivateTestObject>
 
 And use it:
 
-```
+```c#
 namespace Ljson.Examples;
 
 internal class Program
