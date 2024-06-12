@@ -1,7 +1,11 @@
-# A simple library for encoding objects into an <b>ljson</b> string. <br>
-It is like json, but L (!) json. Try it. <br>
-The string contains only the object fields in the order specified by the user. <br>
-To separate the fields, a separate symbol is used at the beginning of the word and a separate one at the end (they must be different). <br>
+# A simple library for encoding objects into an <b>ljson</b> string.
+
+It is like json, but L (!) json. Try it.
+
+The string contains only the object fields in the order specified by the user.
+
+To separate the fields, a separate symbol is used at the beginning of the word and a separate one at the end (they must be different).
+
 These characters are rare for human writing.
 
 # How to use
@@ -46,8 +50,10 @@ internal class TestObjectConverter : LjsonConvert<TestObject>
     }
 }
 ```
-We must define the GetValues method that returns a string array with the data representing object's fields. The string array will be converted to ljson. <br>
-We must define the SetValues method to set our properties from string array got from ljson. <br>
+We must define the GetValues method that returns a string array with the data representing object's fields. The string array will be converted to ljson.
+
+We must define the SetValues method to set our properties from string array got from ljson.
+
 
 To launch it:
 
@@ -75,7 +81,8 @@ internal class Program
 
 ## Private fields
 
-If you have the class with private fields that must be included in ljson, you can use the Iljsonable interface. <br>
+If you have the class with private fields that must be included in ljson, you can use the Iljsonable interface.
+
 
 ```c#
 internal class PrivateTestObject : ILjsonable
