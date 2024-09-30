@@ -5,6 +5,12 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Ljson</Title>
     <Company>NaN</Company>
+    <Version>1.1.2</Version>
+    <Authors>NikchemnoAndNesmachno</Authors>
+    <Description>L(!)json!!!!!!</Description>
+    <PackageProjectUrl>https://github.com/NikchemnoAndNesmachno/Ljson</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/NikchemnoAndNesmachno/Ljson</RepositoryUrl>
+    <PackageTags>ljson json serialization convert obj_to_string</PackageTags>
   </PropertyGroup>
 
 </Project>

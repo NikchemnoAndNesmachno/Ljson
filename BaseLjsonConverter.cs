@@ -9,7 +9,7 @@ namespace Ljson
     {
         public IConvertStringStrategy ConvertStrategy { get; set; }
         public ICreateInstance<TOutput> CreateStrategy { get; set; }
-        public abstract IList ExtractValues(TInput obj);
+        public abstract IList<object> ExtractValues(TInput obj);
         public abstract void AssignValues(TOutput obj, IList<string> values);
         public string ToLjson(TInput obj) => ConvertStrategy.ListToLjson(ExtractValues(obj));
 

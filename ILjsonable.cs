@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Ljson
 {
     public interface ILjsonable
     {
         void AssignValues(IList<string> values);
-        IList ExtractValues();
+        IList<object> ExtractValues();
     }
 }

@@ -11,7 +11,7 @@ namespace Ljson.DefaultBases
         {
             CreateStrategy = new ArrayCreateInstance<T>();
         }
-        public abstract override IList ExtractValues(IList<T> obj);
+        public abstract override IList<object> ExtractValues(IList<T> obj);
 
         public abstract override void AssignValues(IList<T> obj, IList<string> values);
     }

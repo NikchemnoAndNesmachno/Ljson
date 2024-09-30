@@ -55,7 +55,7 @@ namespace Ljson.ConvertStringsStrategy
             return values;
         }
 
-        public string ListToLjson(IList values)
+        public string ListToLjson(IList<object> values)
         {
             var stringBuilder = new StringBuilder();
             foreach (var value in values)

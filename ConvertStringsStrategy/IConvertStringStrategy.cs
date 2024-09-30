@@ -6,6 +6,6 @@ namespace Ljson.ConvertStringsStrategy
     public interface IConvertStringStrategy
     {
         IList<string> LjsonToList(string ljson);
-        string ListToLjson(IList values);
+        string ListToLjson(IList<object> values);
     }
 }

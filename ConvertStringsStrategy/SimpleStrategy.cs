@@ -7,6 +7,6 @@ namespace Ljson.ConvertStringsStrategy
     {
         public char Char { get; set; }
         public IList<string> LjsonToList(string ljson) => ljson.Split(Char);
-        public string ListToLjson(IList values) => string.Join(Char.ToString(), values);
+        public string ListToLjson(IList<object> values) => string.Join(Char.ToString(), values);
     }
 }
