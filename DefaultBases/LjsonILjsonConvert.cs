@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Ljson.DefaultBases
 {
-    public class LjsonILjsonConvert<T> :BaseLjsonConverter<T, T> where T: ILjsonable
+    public class LjsonILjsonConvert<T> : BaseLjsonAssigner<T> where T: ILjsonable
     {
         public override IList<object> ExtractValues(T obj) => obj.ExtractValues();
 
