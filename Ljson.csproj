@@ -12,16 +12,23 @@
     <RepositoryUrl>https://github.com/NikchemnoAndNesmachno/Ljson</RepositoryUrl>
     <PackageTags>ljson json serialization convert obj_to_string</PackageTags>
     <Copyright>NIN</Copyright>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/NikchemnoAndNesmachno/Ljson/refs/heads/master/License.md</PackageLicenseUrl>
+    <PackageLicenseFile>License.md</PackageLicenseFile>
+    <PackageReadmeFile>README.en.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
-
+  
   <ItemGroup>
-    <None Update="icon.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
+    <None Include="License.md" Pack="true" PackagePath="">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="icon.png" Pack="true" PackagePath=""/>
+    <None Include="README.md" Pack="true" PackagePath=""/>
+    <None Include="README.en.md" Pack="true" PackagePath="">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="README.ua.md" Pack="true" PackagePath="">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
 </Project>
