@@ -6,8 +6,8 @@
     <Title>Ljson</Title>
     <Company>NaN</Company>
     <Version>1.2</Version>
-    <Authors>Нікчемно І Несмачно</Authors>
-    <Description>L(!)json!!!!!!</Description>
+    <Authors>NIN</Authors>
+    <Description>Ljson!!!!!!</Description>
     <PackageProjectUrl>https://github.com/NikchemnoAndNesmachno/Ljson</PackageProjectUrl>
     <RepositoryUrl>https://github.com/NikchemnoAndNesmachno/Ljson</RepositoryUrl>
     <PackageTags>ljson json serialization convert obj_to_string</PackageTags>

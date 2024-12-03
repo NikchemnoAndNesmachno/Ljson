@@ -9,10 +9,10 @@ namespace Ljson
         public abstract IList<object> ExtractValues(TInput obj);
         public abstract void AssignValues(TInput obj, IList<string> values);
         
-        public string ToLjson(TInput obj) => 
+        public virtual string ToLjson(TInput obj) => 
             ConvertStrategy.ListToLjson(ExtractValues(obj));
 
-        public void FromLjson(TInput obj, string ljson)
+        public virtual void FromLjson(TInput obj, string ljson)
         {
             var values = ConvertStrategy.LjsonToList(ljson);
             AssignValues(obj, values);
